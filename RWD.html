@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titel der Seite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="inhalt\style.css" />
+</head>
+
+
+<body>
+  <video id="video" loop autoplay muted>
+    <source src="inhalt\Pyrean_Doppel_neu.mp4" type="video/mp4" />
+    <source src="inhalt\Pyrean_Doppel_neu.webm" type="video/webm" />
+    Your browser does not support the HTML5 Video element.
+  </video>
+  <div class="overlayText">
+    <h3>PYREAN DOPPEL</h3>
+    <h1>MAKE YOUR <br>LIFE BETTER</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <picture>
+        <source media="(min-width: 992px)" srcset="inhalt\Pyrean_hell_gruen_schraeg.png">
+        <img srcset="inhalt\Pyrean_hell_gruen.jpg" alt="Pyrean Doppel detail">
+      </picture>
+    </div>
+    <div class="col-lg-4">
+      <h2>DER PYREAN DOPPEL</h2>
+      <p>Der Pyrean Doppel ist eine Weiterentwicklung des Pyrean Evo. Das Ergebnis ist eines langen
+        Perfektionierungsprozesses
+        von bereits bestehender Eigenschaften und der Entwicklung von neuen Lösungen in Sachen Qualität und Design.
+        Was ihn vonanderen abhebt ist die Fähigkeit sich individuell auf Sie anpassen zu lassen.</p>
+    </div>
+  </div>
+
+  <div class="row" id="row_reverse">
+    <div class="col-lg-7">
+      <h2>AUSSENDESIGN</h2>
+      <p>Das Design des Pyrean Doppel führt neue, gut durchdachte Designelemente ein, ohne das charakteristische Pyrean
+        Design zu verlieren.
+        Das aus Massivholz gefertigte Schwebeelement greift das unverkennbare und immer wiederkehrende Stilelement der
+        Natur auf, die Formen sind durch die Eleganz der Pyramiden inspiriert. Für das individuelle Design ihres Pyrean
+        Doppel stehen Ihnen mehrere Materialien zur Verfügung. Der Metallische Sockel mit integriertem Lautsprecher
+        greift das Design des Vorgänger-Modell auf.
+        Hinzu gesellt sich das Highlight bietet die Glasspitze mit einem 360° Licht mit vielen wechselnden
+        Farbvarianten.
+      </p>
+      <div style="text-align:center">
+        <button type="button" class="collapsible">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+            <g>
+              <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z" class="hexagon"></path>
+              <g class="icon" transform: rotate(90deg)>
+                <text>
+                  <tspan>3D</tspan>
+                </text>
+              </g>
+            </g>
+          </svg>
+          <span> DESIGN</span>
+        </button>
+        <div class="content">
+          <video id="video" loop autoplay muted class="d-block w-100">
+            <source src="inhalt\Pyrean_Aussenansicht.mp4" type="video/mp4" />
+            <source src="inhalt\Pyrean_Aussenansicht.webm" type="video/webm" />
+            Your browser does not support the HTML5 Video element.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-5">
+      <picture>
+        <source srcset="inhalt\Unbenannt.png" media="(min-width: 992px)">
+        <img srcset="inhalt\Lampe_rot_cropped.jpg" alt="Pyrean Doppel detail">
+      </picture>
+    </div>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    } 
+  </script>
+
+  <div class="background">
+    <div class="row">
+      <div class="col-lg">
+        <div class="row">
+          <div class="col-lg-7">
+            <picture>
+              <source media="(min-width: 992px)" srcset="inhalt\Pyrean_hell_weiß_schräg.png">
+              <img srcset="inhalt\Pyrean_hell_weiß.jpg" alt="Pyrean Doppel hell">
+            </picture>
+
+          </div>
+          <div class="col-lg-5">
+            <picture>
+              <source media="(min-width: 992px)" srcset="inhalt\Sockel_dunkel.png">
+              <img style="padding-top: 60px" class="mobile_noshow" src="inhalt\dunkel-detail.jpg"
+                alt="Pyrean Doppel Detail Sockel dunkel">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-5">
+      <picture>
+        <source media="(min-width: 992px)" srcset="inhalt\dunkelrot.png">
+        <img class="mobile_noshow" srcset="inhalt\dunkel-rot.jpg" alt="Pyrean Doppel detail dunkel rot">
+      </picture>
+
+    </div>
+    <div class="col-lg-7">
+      <h2>DAS INNENLEBEN</h2>
+      <p>Das Innenleben des Pyrean Doppel ist ausgestattet mit einem elektrisch aufgeladenen und leistungsstarken
+        Magneten und einer farbenfrohen LED-Lampe in der oberen Spitze. Ausgestattet ist der Sockel mit einem
+        Bluetooth-Lautsprecher mit integriertem Mikrofon der neuesten Generation und bietet ein absolutes Klangerlebnis
+        im ganzen Raum. Mit der im App Store oder Play Store erhältlichen App, können Sie es ganz bequem, auch ohne
+        Internet steuern.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg">
+      <h2>FEEL IT</h2>
+      <p>Die Emotion hinter Farben und Musik sind wie ein Herzschlag, der jede Faser Ihres Körpers vibrieren lässt.
+      </p>
+    </div>
+    <div class="col-lg">
+      <h2>STYLE IM MITTELPUNKT</h2>
+      <p>Der Pyrean Doppel besticht durch sein faszinierendes und doch minimalistisches Design, welches einen eine
+        natürliche Weiterentwicklung seines Vorgängers darstellt. Durch die Natürlichkeit der verwendeten Materialien
+        hat jeder Pyrean Doppel seine eigenen Einzigartigkeiten.</p>
+    </div>
+  </div>
+<div class="background">
+  <div class="row">
+    <div class="col-lg">
+      <picture>
+        <source media="(min-width: 992px)" srcset="inhalt\hellaus.png">
+        <img class="mobile_noshow" id="morepaddingtop" srcset="inhalt\hell-aus.jpg" alt="Pyrean Doppel detail hell aus">
+      </picture>
+    </div>
+    <div class="col-lg">
+      <picture>
+        <source media="(min-width: 992px)" srcset="inhalt\Pyrean_dunkel_blau_schräg.png">
+        <img class="mobile_noshow" srcset="inhalt\Pyrean_dunkel_blau.jpg" alt="Pyrean Doppel detail dunkel blau">
+      </picture>
+
+    </div>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <picture>
+        <source media="(min-width: 992px)" srcset="inhalt\dunkelweiss.png">
+        <img style="max-height:80% ;" srcset="inhalt\dunkelweiss.jpg" alt="Pyrean Doppel detail dunkel weiß">
+      </picture>
+
+    </div>
+    <div class="col-lg-4">
+      <h2 id="vernetzen">VERNETZEN SIE IHREN PYREAN DOPPEL</h2>
+      <p>Mit den neuen kabellosen Verbindungsmöglichkeiten wird das Erlebnis mit dem Pyrean Doppel so komfortabel wie
+        möglich: Exklusive Komfort- und Verbindungsmöglichkeiten, sowie Licht- und Unterhaltungsfunktionen ermöglichen
+        Ihnen eine völlig neue Art des Erleben.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container_cta">
+      <img src="inhalt\Haendler_finden.PNG" alt="Händler finden">
+      <div class="overlayText_haendler">
+        <h1 id="cta">Finden Sie Ihren Fachhändler</h1>
+        <button type="button" class="btn_haendler">
+          <svg id="haendler" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+            <g>
+              <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z" class="hexagon"></path>
+            </g>
+          </svg>
+          <span class="btn_text">Händler finden</span>
+        </button>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
